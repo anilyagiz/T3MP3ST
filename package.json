@@ -144,7 +144,7 @@
     "url": "git+https://github.com/elder-plinius/t3mp3st.git"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.25.1",
+    "@modelcontextprotocol/sdk": "^1.32.1",
     "ajv": "^8.20.0",
     "boxen": "^7.1.1",
     "chalk": "^5.3.0",
@@ -155,7 +155,7 @@
     "dotenv": "^16.4.5",
     "eventemitter3": "^5.0.1",
     "express": "^4.18.2",
-    "figlet": "^1.7.0",
+    "figlet": "^1.12.0",
     "gradient-string": "^2.0.2",
     "inquirer": "^9.2.15",
     "ora": "^8.0.1",
@@ -163,7 +163,7 @@
     "socks": "^2.8.9",
     "tree-sitter-wasms": "0.1.13",
     "tsx": "^4.7.0",
-    "undici": "^8.7.0",
+    "undici": "^8.12.2",
     "web-tree-sitter": "0.25.10"
   },
   "devDependencies": {
@@ -186,7 +186,10 @@
   },
   "overrides": {
     "qs": "^6.15.2",
-    "hono": "^4.12.25",
-    "js-yaml": "^4.2.0"
+    "hono": "^4.13.13",
+    "js-yaml": "^4.3.2",
+    "proxy-addr": "^2.0.8",
+    "ip-address": "^10.7.4",
+    "fast-uri": "^3.1.8"
   }
 }
