@@ -418,6 +418,9 @@ interface ParsedCommand {
 }
 
 const SHELL_META = /[|&;$<>`\\]/;
+// Deliberately matches control characters (incl. NUL..US / DEL..APC and line/paragraph
+// separators) to reject commands smuggling them in \u2014 the control chars are the point.
+// eslint-disable-next-line no-control-regex
 const COMMAND_CONTROL = /[\x00-\x1F\x7F-\x9F\u2028\u2029]/;
 const CURL_TRANSPORT_OVERRIDE_FLAGS = new Set([
   '--resolve',
