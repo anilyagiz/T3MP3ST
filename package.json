@@ -174,12 +174,12 @@
     "@types/figlet": "^1.5.8",
     "@types/gradient-string": "^1.1.5",
     "@types/inquirer": "^9.0.7",
-    "@types/node": "^20.11.0",
-    "@vitest/coverage-v8": "4.1.9",
+    "@types/node": "^22.20.5",
+    "@vitest/coverage-v8": "^5.0.5",
     "eslint": "^9.39.2",
     "typescript": "^5.3.3",
     "typescript-eslint": "^8.51.0",
-    "vitest": "^4.1.9"
+    "vitest": "^5.0.5"
   },
   "engines": {
     "node": ">=22.19.0"
@@ -190,6 +190,12 @@
     "js-yaml": "^4.3.2",
     "proxy-addr": "^2.0.8",
     "ip-address": "^10.7.4",
-    "fast-uri": "^3.1.8"
+    "fast-uri": "^3.1.8",
+    "eslint": {
+      "brace-expansion": "^1.1.21"
+    },
+    "@typescript-eslint/typescript-estree": {
+      "brace-expansion": "^2.1.7"
+    }
   }
 }
