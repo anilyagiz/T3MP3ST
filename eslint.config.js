@@ -25,7 +25,11 @@ export default tseslint.config(
       'no-console': 'off', // Allow console for CLI tool
       'prefer-const': 'error',
       'no-var': 'error',
-      'eqeqeq': ['error', 'always'],
+      // Strict equality everywhere, except the `== null` / `!= null` idiom, which
+      // intentionally matches both null and undefined. Rewriting it to `!==` would
+      // let undefined slip through load-bearing null checks (timeout/wedge detection,
+      // input parsing), so the documented `null: 'ignore'` escape is used instead.
+      'eqeqeq': ['error', 'always', { null: 'ignore' }],
       'curly': ['warn', 'multi-line'],  // Allow single-line if without braces
     },
   },
